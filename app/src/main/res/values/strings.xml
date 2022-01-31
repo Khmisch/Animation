@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Animation</string>
+    <string name="telegram">Telegram X</string>
+    <string name="fast">Fast</string>
+    <string name="free">Free</string>
+    <string name="secure">Secure</string>
+    <string name="powerful">Powerful</string>
+    <string name="cloud">Cloud Base</string>
+    <string name="telegram_text">    The worlds fastest messaging app. It\'s free and secure</string>
+    <string name="free_text">    Telegram is free forever. No ads, no subscription fees</string>
+    <string name="fast_text">    Telegram delivers messages faster than any other application</string>
+    <string name="secure_text">    Telegram keeps your phone from hacker attacks</string>
+    <string name="powerful_text">    Telegram has no limits on the size of your media and chats</string>
+    <string name="cloud_text">    Telegram lets you access your messages from multiple devices</string>
+</resources>
