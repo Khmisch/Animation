@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Animation">
         <activity
+            android:name=".activity.TwitterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.InstagramActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.FacebookActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.TelegramActivity"
             android:exported="false" />
         <activity

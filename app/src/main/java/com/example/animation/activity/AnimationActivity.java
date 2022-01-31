@@ -14,7 +14,7 @@ import com.example.animation.R;
 
 public class AnimationActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button b_blink, b_zoom, b_fade, b_rotate, b_slide, b_move;
+    Button b_blink, b_zoom, b_fade, b_rotate, b_slide, b_move, b_bounce, b_sequential, b_together;
     ImageView iv_sample;
 
     @Override
@@ -39,6 +39,12 @@ public class AnimationActivity extends AppCompatActivity implements View.OnClick
         b_slide.setOnClickListener(this);
         b_move = findViewById(R.id.b_move);
         b_move.setOnClickListener(this);
+        b_bounce = findViewById(R.id.b_bounce);
+        b_bounce.setOnClickListener(this);
+        b_sequential = findViewById(R.id.b_sequential);
+        b_sequential.setOnClickListener(this);
+        b_together = findViewById(R.id.b_together);
+        b_together.setOnClickListener(this);
 
     }
 
@@ -70,6 +76,18 @@ public class AnimationActivity extends AppCompatActivity implements View.OnClick
                 break;
             case R.id.b_rotate:
                 animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate);
+                iv_sample.startAnimation(animation);
+                break;
+            case R.id.b_bounce:
+                animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.bounce);
+                iv_sample.startAnimation(animation);
+                break;
+            case R.id.b_sequential:
+                animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.sequential);
+                iv_sample.startAnimation(animation);
+                break;
+            case R.id.b_together:
+                animation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.together);
                 iv_sample.startAnimation(animation);
                 break;
         }

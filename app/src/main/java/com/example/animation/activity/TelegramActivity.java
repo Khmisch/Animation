@@ -15,11 +15,14 @@ import android.widget.TextView;
 import com.example.animation.R;
 import com.example.animation.adapter.TelegramFragmentAdapter;
 import com.google.android.material.tabs.TabLayout;
+import com.tbuonomo.viewpagerdotsindicator.DotsIndicator;
+import com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator;
 
 public class TelegramActivity extends AppCompatActivity {
     private ViewPager viewPager;
     TextView tv_message;
     private TelegramFragmentAdapter adapter;
+    WormDotsIndicator dotsIndicator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,8 +32,8 @@ public class TelegramActivity extends AppCompatActivity {
         // hide action bar you can use NoAction theme as well
         getSupportActionBar().hide();
         // bind views
+        dotsIndicator = (WormDotsIndicator) findViewById(R.id.dots_indicator);
         viewPager = findViewById(R.id.viewpager);
-        TabLayout tabLayout = findViewById(R.id.tab_layout);
         tv_message = findViewById(R.id.tv_message);
         // init slider pager adapter
         adapter = new TelegramFragmentAdapter(getSupportFragmentManager(),
@@ -38,7 +41,7 @@ public class TelegramActivity extends AppCompatActivity {
         // set adapter
         viewPager.setAdapter(adapter);
         // set dot indicators
-        tabLayout.setupWithViewPager(viewPager);
+        dotsIndicator.setViewPager(viewPager);
         // make status bar transparent
 
     }

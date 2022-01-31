@@ -42,11 +42,6 @@ public class TelegramFragment extends Fragment {
     public TelegramFragment() {
         // Required empty public constructor
     }
-    /**
-     * Use this factory method to create a new instance of
-     *
-     * @return A new instance of fragment SliderItemFragment.
-     */
     public static TelegramFragment newInstance(int position) {
         TelegramFragment fragment = new TelegramFragment();
         Bundle args = new Bundle();

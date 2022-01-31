@@ -4,9 +4,9 @@
 
     <item android:state_pressed="false">
         <shape android:shape="rectangle">
-            <solid android:color="#ffffff"/>
+            <solid android:color="#2F72D8"/>
             <stroke android:width="5px"
-                android:color="#c13584"
+                android:color="@color/black"
                 android:dashGap="3dp"
                 android:dashWidth="3dp"/>
         </shape>
@@ -15,7 +15,7 @@
         <shape android:shape="rectangle">
             <solid android:color="@color/black"/>
             <stroke android:width="5px"
-                android:color="#0000FF"
+                android:color="#0D0DC8"
                 android:dashGap="3dp"
                 android:dashWidth="3dp"/>
         </shape>

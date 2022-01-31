@@ -17,7 +17,7 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button_gradient"
+            android:background="@drawable/button_rounded"
             android:text="Animation Activity"
             app:backgroundTint="@null"/>
 
@@ -27,20 +27,37 @@
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button_gradient_rotate"
+            android:background="@drawable/button_gradient"
             android:text="Telegram Activity"
             android:textColor="@color/black"
             app:backgroundTint="@null"/>
 
         <Button
-            android:id="@+id/bt_contact_list"
+            android:id="@+id/bt_facebook"
             android:layout_width="260dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/button_borders"
-            android:text="Contact Activity"
+            android:text="FacebookActivity"
             android:textColor="@color/black"
-            android:visibility="gone"
+            app:backgroundTint="@null"/>
+
+        <Button
+            android:id="@+id/bt_instagram"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_gradient_rotate"
+            android:text="Instagram activity"
+            app:backgroundTint="@null"/>
+        <Button
+            android:id="@+id/bt_twitter"
+            android:layout_width="260dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_dashed"
+            android:text="Twitter activity"
+            android:textColor="@color/black"
             app:backgroundTint="@null"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

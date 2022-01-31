@@ -7,13 +7,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
 import com.example.animation.fragment.TelegramFragment;
+import com.example.animation.fragment.TwitterFragment;
 
-public class FacebookFragmentAdapter extends FragmentPagerAdapter {
-    public FacebookFragmentAdapter(@NonNull FragmentManager fm, int behavior) {
+public class TwitterFragmentAdapter extends FragmentPagerAdapter {
+    public TwitterFragmentAdapter(@NonNull FragmentManager fm, int behavior) {
         super(fm, behavior);
     }
     @NonNull @Override public Fragment getItem(int position) {
-        return TelegramFragment.newInstance(position);
+        return TwitterFragment.newInstance(position);
     }
     // size is hardcoded
     @Override public int getCount() {

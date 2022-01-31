@@ -12,7 +12,7 @@ import com.example.animation.R;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    Button bt_anim, bt_telegram;
+    Button bt_anim, bt_telegram, bt_facebook, bt_instagram, bt_twitter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         bt_anim.setOnClickListener(this);
         bt_telegram = findViewById(R.id.bt_telegram);
         bt_telegram.setOnClickListener(this);
+        bt_facebook = findViewById(R.id.bt_facebook);
+        bt_facebook.setOnClickListener(this);
+        bt_instagram = findViewById(R.id.bt_instagram);
+        bt_instagram.setOnClickListener(this);
+        bt_twitter = findViewById(R.id.bt_twitter);
+        bt_twitter.setOnClickListener(this);
 
     }
 
@@ -40,6 +46,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.bt_telegram:
                 callTelegramActivity();
                 break;
+            case R.id.bt_facebook:
+                callFacebookActivity();
+                break;
+            case R.id.bt_instagram:
+                callInstagramActivity();
+                break;
+            case R.id.bt_twitter:
+                callTwitterActivity();
+                break;
         }
 
     }
@@ -50,6 +65,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
     private void callTelegramActivity() {
         Intent intent = new Intent(this, TelegramActivity.class);
+        startActivity(intent);
+    }
+    private void callFacebookActivity() {
+        Intent intent = new Intent(this, FacebookActivity.class);
+        startActivity(intent);
+    }
+    private void callInstagramActivity() {
+        Intent intent = new Intent(this, InstagramActivity.class);
+        startActivity(intent);
+    }
+    private void callTwitterActivity() {
+        Intent intent = new Intent(this, TwitterActivity.class);
         startActivity(intent);
     }
 }

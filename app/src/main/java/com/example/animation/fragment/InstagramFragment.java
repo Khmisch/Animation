@@ -17,12 +17,12 @@ import androidx.fragment.app.Fragment;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.animation.R;
 
-public class FacebookFragment extends Fragment {
+public class InstagramFragment extends Fragment {
     private static final String ARG_POSITION = "slider-position";
     // prepare all title ids arrays
     @StringRes
     private static final int[] PAGE_TITLES =
-            new int[] { R.string.telegram, R.string.fast, R.string.free, R.string.secure, R.string.powerful, R.string.cloud };
+            new int[] { R.string.instagram, R.string.fast, R.string.free, R.string.secure, R.string.powerful, R.string.cloud };
     // prepare all subtitle ids arrays
     @StringRes
     private static final int[] PAGE_TEXT =
@@ -33,20 +33,15 @@ public class FacebookFragment extends Fragment {
     @StringRes
     private static final int[] PAGE_ANIMATION =
             new int[]{
-                    R.raw.telegram_1, R.raw.fast,R.raw.free,  R.raw.secure, R.raw.powerfull, R.raw.cloud
+                    R.raw.instagram, R.raw.fast,R.raw.free,  R.raw.secure, R.raw.powerfull, R.raw.cloud
             };
 
     private int position;
-    public FacebookFragment() {
+    public InstagramFragment() {
         // Required empty public constructor
     }
-    /**
-     * Use this factory method to create a new instance of
-     *
-     * @return A new instance of fragment SliderItemFragment.
-     */
-    public static FacebookFragment newInstance(int position) {
-        FacebookFragment fragment = new FacebookFragment();
+    public static InstagramFragment newInstance(int position) {
+        InstagramFragment fragment = new InstagramFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_POSITION, position);
         fragment.setArguments(args);

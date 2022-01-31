@@ -3,7 +3,6 @@
     android:fillAfter="true"
     android:interpolator="@android:anim/linear_interpolator" >
 
-
     <!-- Move -->
     <scale
         xmlns:android="https://schemas.android.com/apk/res/android"
@@ -16,7 +15,7 @@
         android:toYScale="4" >
     </scale>
 
-    <!-- Rotate 180 degrees -->
+<!--     Rotate 180 degrees -->
     <rotate
         android:duration="500"
         android:fromDegrees="0"

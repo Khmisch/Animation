@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.Animation;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,12 +17,12 @@ import androidx.fragment.app.Fragment;
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.animation.R;
 
-public class TelegramFragment extends Fragment {
+public class FacebookFragment extends Fragment {
     private static final String ARG_POSITION = "slider-position";
     // prepare all title ids arrays
     @StringRes
     private static final int[] PAGE_TITLES =
-            new int[] { R.string.telegram, R.string.fast, R.string.free, R.string.secure, R.string.powerful, R.string.cloud };
+            new int[] { R.string.facebook, R.string.messenger, R.string.like, R.string.heart, R.string.secure, R.string.bus };
     // prepare all subtitle ids arrays
     @StringRes
     private static final int[] PAGE_TEXT =
@@ -35,20 +33,16 @@ public class TelegramFragment extends Fragment {
     @StringRes
     private static final int[] PAGE_ANIMATION =
             new int[]{
-                    R.raw.telegram_1, R.raw.fast,R.raw.free,  R.raw.secure, R.raw.powerfull, R.raw.cloud
+                    R.raw.facebook, R.raw.messenger,R.raw.power_like,  R.raw.heart_reaction, R.raw.secure_f, R.raw.business_suite
             };
 
     private int position;
-    public TelegramFragment() {
+    public FacebookFragment() {
         // Required empty public constructor
     }
-    /**
-     * Use this factory method to create a new instance of
-     *
-     * @return A new instance of fragment SliderItemFragment.
-     */
-    public static TelegramFragment newInstance(int position) {
-        TelegramFragment fragment = new TelegramFragment();
+
+    public static FacebookFragment newInstance(int position) {
+        FacebookFragment fragment = new FacebookFragment();
         Bundle args = new Bundle();
         args.putInt(ARG_POSITION, position);
         fragment.setArguments(args);

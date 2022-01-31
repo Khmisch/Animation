@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">Animation</string>
     <string name="telegram">Telegram X</string>
+    <string name="instagram">Instagram</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="messenger">Messenger</string>
+    <string name="heart">Reaction heart</string>
+    <string name="like">Reaction like</string>
+    <string name="bus">Business suit</string>
     <string name="fast">Fast</string>
     <string name="free">Free</string>
     <string name="secure">Secure</string>
